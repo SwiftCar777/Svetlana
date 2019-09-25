@@ -1,0 +1,135 @@
+@charset "utf-8"
+
+body,html{
+	width:100%;
+	height:100%;
+}
+
+.otstup{
+	width:80%;
+	margin-left:10%;
+}
+/*Стили для шапки*/
+
+header{
+	width:100%;
+	float:left;
+	background-color:#000000;
+}
+.header1{
+	font-size:2.2em;
+	line-height:1.5em;
+	color:#fff;
+	margin-bottom:10px;
+	margin-top:5px;
+}
+
+/*Стили для основной части*/
+
+.osnov{
+	width:100%;
+	padding-bottom:40px;
+	padding-top:40px;
+	background-color:#faf2f2;
+	color:#fff;
+	float:left;
+	
+}
+.osnov-left{
+	
+	float:left;
+}
+.osnov-right{
+	
+	float:left;
+}
+.osnov-text{
+	color:#000000;
+	font-size:1.5em;
+	line-height:2.0em;
+}
+
+.osnov1{
+	width:100%;
+	padding-bottom:40px;
+	padding-top:40px;
+	background-color:#de1f1f;
+	color:#fff;
+	float:left;
+	
+}
+.osnov1-text{
+	color:#fff;
+	font-size:1.2em;
+	line-height:1.7em;
+}
+.osnov2{
+	width:100%;
+	padding-bottom:40px;
+	padding-top:40px;
+	background-color:#faf2f2;
+	float:left;
+	
+}
+.osnov2-text{
+	font-size:1.2em;
+	line-height:1.7em;
+}
+
+.osnov3{
+	float:left;
+	margin-bottom:15px;
+}
+.osnov3-text{
+	font-size:2.5em;
+	margin-top:10px;
+	text-align:center;
+}
+.osnov-img{
+	width:100%;
+	margin-bottom:50px;
+	margin-top:50px;
+	background-size:contain;
+	
+}
+.img{
+	width:60%;
+	margin-left:20%;
+	
+}
+
+.osnov-niz{
+	margin-bottom:25px;
+	float:left;
+	text-align:center;
+}
+/*Адаптация под экраны*/
+
+@media (min-width:801px){
+	.osnov-left{
+	width:45%;
+	float:left;
+	}
+	.osnov-right{
+	width:45%;
+	margin-left:10%;
+	float:left;
+	}
+}
+@media (max-width:800px) {
+	.osnov-left{
+	width:100%;
+	
+	}
+	.osnov-right{
+	width:100%;
+	margin-top:40px;
+	}
+}
+@media (min-width:801px) and (max-width:1000px){
+	.osnov-text{
+		font-size:1.2em;
+	}
+}
+
+

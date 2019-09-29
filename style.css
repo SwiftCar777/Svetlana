@@ -10,18 +10,56 @@ body,html{
 	margin-left:10%;
 }
 /*Стили для шапки*/
-
+.header0{
+	width:100%;
+	float:left;
+	background-color:#faf2f2;
+	padding:5px 0 5px 0;
+}
+.header0-left{
+	width:30%;
+	float:left;
+	text-align:left;
+}
+.header0-right{
+	width:70%;
+	float:left;
+	
+}
+.header0 a{
+	color:#79abfc;
+}
 header{
 	width:100%;
 	float:left;
 	background-color:#000000;
+	padding:15px 0 15px 0;
 }
 .header1{
-	font-size:2.2em;
-	line-height:1.5em;
+	font-size:1.2em;
+	line-height:1.2em;
 	color:#fff;
-	margin-bottom:10px;
-	margin-top:5px;
+	text-align:left;
+	margin-left:10px;
+	padding-top:10px;
+	/*margin-bottom:15px;
+	margin-top:10px;*/
+}
+.logo{
+	width:50px;
+}
+.header-left{
+	float:left;
+	width:70px;
+}
+.header-rigth{
+	float:left;
+	
+	
+}
+.rigth{
+	float:left;
+	text-align:right;
 }
 
 /*Стили для основной части*/
@@ -36,7 +74,7 @@ header{
 	
 }
 .osnov-left{
-	
+	text-align:left;
 	float:left;
 }
 .osnov-right{
@@ -45,21 +83,21 @@ header{
 }
 .osnov-text{
 	color:#000000;
-	font-size:1.5em;
-	line-height:2.0em;
+	font-size:1.2em;
+	line-height:1.7em;
 }
 
 .osnov1{
 	width:100%;
 	padding-bottom:40px;
 	padding-top:40px;
-	background-color:#de1f1f;
+	background-color:#fff;
 	color:#fff;
 	float:left;
 	
 }
 .osnov1-text{
-	color:#fff;
+	color:#000000;
 	font-size:1.2em;
 	line-height:1.7em;
 }
@@ -99,10 +137,41 @@ header{
 }
 
 .osnov-niz{
-	margin-bottom:25px;
+	width:100%;
+	float:left;
+	font-size:0.8em;
+	margin-top:10px;
+	text-align:left;
+	color:#fff;
+}
+/*Стили для footer*/
+footer{
+	width:100%;
+	background-color:#2a2a2b;
+	float:left;
+	padding:20px 0 30px 0;
+}
+footer a{
+	color:#9ec3ff;
+}
+footer a:hover{
+	color:#fff;
+}
+.footer-logo{
+	width:100%;
+	margin-bottom:20px;
+	margin-top:10px;
 	float:left;
 	text-align:center;
 }
+.footer-left{
+	width:50%;
+	float:left;
+}
+#telefon:hover{
+	content:'+79655888666';
+}
+
 /*Адаптация под экраны*/
 
 @media (min-width:801px){
@@ -119,17 +188,55 @@ header{
 @media (max-width:800px) {
 	.osnov-left{
 	width:100%;
-	
+	text-align:left;
 	}
 	.osnov-right{
 	width:100%;
 	margin-top:40px;
+	text-align:left;
 	}
+
 }
 @media (min-width:801px) and (max-width:1000px){
 	.osnov-text{
 		font-size:1.2em;
 	}
 }
+@media (max-width:650px){
+	.footer-left{
+		width:100%;
+		text-align:center;
+		margin-bottom:10px;
+	}
+	
+}
+@media (max-width:450px){
+	.header0-left{
+	width:100%;
+	text-align:left;
+	}
+	.header0-right{
+	width:100%;
+	margin-top:0px;
+	text-align:left;
+	}
+}
 
-
+@media (min-width:1000px) and (max-width:1100px){
+	.osnov-text{
+	font-size:1.4em;
+	
+	}
+}
+@media (min-width:1101px) and (max-width:1300px){
+	.osnov-text{
+	font-size:1.6em;
+	
+	}
+}
+@media (min-width:1301px) {
+	.osnov-text{
+	font-size:1.9em;
+	
+	}
+}
